@@ -93,7 +93,7 @@ text(c(1, 4, 8.5, 15, 20, 26, 30), -0.05, unique(populations),
 abline(v = c(3, 5, 13, 17, 24, 28), lty = 5, lwd = 2, col = "white")
 ```
 
-![](ngsAdmix_tutorial_files/figure-markdown_github/unnamed-chunk-8-1.png)
+![](unnamed-chunk-8-1.png)
 
 From here you can customize the plot in a variety of ways. You should move the various barplot columns into an order that makes sense for you (maybe based on geography, or levels of admixture). I could write a silly function to do this, but it seems like the easiest way may just be to manipulate the original barplot with a bunch of vectors. Here I shift the marsh order to go from North to South, change the colors and increase the font size:
 
@@ -107,4 +107,4 @@ text(c(4, 9.5, 13, 18, 24, 27.7, 30.2), -0.05, c("1", "10", "21",
     "55", "39", "9", "11"), xpd = T, cex = 1.2)
 ```
 
-![](ngsAdmix_tutorial_files/figure-markdown_github/unnamed-chunk-9-1.png)
+![](unnamed-chunk-9-1.png)
