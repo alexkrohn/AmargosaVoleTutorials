@@ -73,7 +73,7 @@ legend("topleft", col = unique(PC$color), legend = unique(PC$pop), pch = 19, cex
     bty = "n")
 ```
 
-![](pca_plots_with_ngsCovar_files/figure-markdown_github/unnamed-chunk-6-1.png)
+![](Figures/unnamed-chunk-6-1.png)
 
 Looks good, but I really want the legend colors to be in color order (with blues for the Southern Clade, and purples for the Northern Clade).
 
@@ -85,7 +85,7 @@ legend("topleft", col = unique(PC$color)[c(1, 3:6, 2)], legend = c("Wild Armargo
     pch = 19, cex = 1.2, bty = "n")
 ```
 
-![](pca_plots_with_ngsCovar_files/figure-markdown_github/unnamed-chunk-7-1.png)
+![](Figures/unnamed-chunk-7-1.png)
 
 Let's also add in ellipses to show the 95% confidence interval around these points. The groupings for the ellipses below come from the most likely K (K = 2 with these population groupings) from NGSadmix using the Evanno et al. (2005) methods (see [my other tutorial](https://github.com/alexkrohn/AmargosaVoleTutorials/blob/master/ngsAdmix_tutorial.md) for more information).
 
@@ -115,4 +115,4 @@ points(ellipse(cor(southernclade[, c(1, 2)]), scale = c(sd(southernclade$V1), sd
     type = "l", col = "cornflowerblue", lwd = 2)
 ```
 
-![](pca_plots_with_ngsCovar_files/figure-markdown_github/unnamed-chunk-9-1.png)
+![](Figures/unnamed-chunk-9-1.png)
