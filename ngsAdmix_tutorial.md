@@ -1,7 +1,7 @@
 Using NGSadmix with ANGSD
 ================
 
-This script will lead you through, step by step, how to use R and ANGSD to make an NGSadmix plot for your data. We will also run 10 replicates of each K value so that you can use the Evanno et al. 2005 (doi: 10.1111/j.1365-294X.2005.02553.x) to determine the most likely K based on the log likelihood value of each K. This tutorial assumes that you have ANGSD and NGSadmix installed properly on your machine.
+This tutorial will lead you through, step by step, how to use R and ANGSD to make an NGSadmix plot for your data. We will also run 10 replicates of each K value so that you can use the Evanno et al. 2005 (doi: 10.1111/j.1365-294X.2005.02553.x) to determine the most likely K based on the log likelihood value of each K. This tutorial assumes that you have ANGSD and NGSadmix installed properly on your machine.
 
 Generate Genotype Likelihoods from ANGSD
 ----------------------------------------
