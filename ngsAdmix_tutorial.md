@@ -95,7 +95,7 @@ abline(v = c(3, 5, 13, 17, 24, 28), lty = 5, lwd = 2, col = "white")
 
 ![](Figures/unnamed-chunk-8-1.png)
 
-From here you can customize the plot in a variety of ways. You should move the various barplot columns into an order that makes sense for you (maybe based on geography, or levels of admixture). I could write a silly function to do this, but it seems like the easiest way may just be to manipulate the original barplot with a bunch of vectors. Here I shift the marsh order to go from North to South, change the colors and increase the font size:
+From here you can customize the plot in a variety of ways. For example, you can move the various barplot columns into an order that makes sense for you (maybe based on geography, or levels of admixture). I could write a silly function to do this, but it seems like the easiest way may just be to manipulate the original barplot with a bunch of vectors. Here I shift the marsh order to go from North to South, change the colors and increase the font size:
 
 ``` r
 geolocated <- admix[, c(6:13, 1:3, 14:17, 18:24, 25:28, 29:31, 
