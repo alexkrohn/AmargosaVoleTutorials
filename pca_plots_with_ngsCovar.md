@@ -11,7 +11,7 @@ Input the Covariance Matrix and Calculate Eigenvalues
 To begin, you must import your covariance matrix from ngsCovar. If you followed the above tutorial, you will have labeleled this \*.covar.
 
 ``` r
-covar <- read.table("~/Documents/Berkeley/VoleProject/bestrad2016/Analysis/aligned_radtools_noclones/k90_outputs/pca/wild_plus_outgroups/wildtecopa_plusoutgroups_ngscovar_1Dec2016", 
+covar <- read.table("wildtecopa_plusoutgroups_ngscovar_1Dec2016.covar", 
     stringsAsFactors = FALSE)
 ```
 
