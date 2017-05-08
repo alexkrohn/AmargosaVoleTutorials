@@ -9,7 +9,7 @@ Importing and Formatting ANGSD Data for SpaceMix
 Begin by importing your unzipped -doGeno 2 output. This is a very large matrix with each row being a locus, and each column being the genotype of one individual.
 
 ``` r
-gen.matrix <- read.table("~/Documents/Berkeley/VoleProject/bestrad2016/Analysis/aligned_radtools_noclones/k90_outputs/spacemix/all_wild_inds_dogeno2_minInd.geno")
+gen.matrix <- read.table("all_wild_inds_dogeno2_minInd.geno")
 ```
 
 SpaceMix will not accept loci labels or position numbers (the first two columns of the -doGeno 2 output). Let's remove those. SpaceMix also calls for each row to be an individual and each column to be a locus, so let's transpose the matrix. I have 54 individuals in my analysis, so now my data are 98,295 SNPs from 54 individuals.
@@ -64,7 +64,7 @@ As one last check, let's make sure that no individuals have lots of missing data
 hist(rowSums(samples)/(2 * ncol(samples)))
 ```
 
-![](SpaceMix_tutorial_files/figure-markdown_github/unnamed-chunk-7-1.png)
+![](Figures/histone.png)
 
 Well, that's not too good. Let's remove the individuals with more than 50% missing data from both the sample and genotype matrices so those individuals' missing data doesn't throw off the analysis.
 
@@ -75,7 +75,7 @@ new.gen.matrix <- gen.matrix.switcharoo[which(rowSums(samples)/(2 * ncol(samples
 hist(rowSums(newsamples)/(2 * ncol(newsamples)))
 ```
 
-![](SpaceMix_tutorial_files/figure-markdown_github/unnamed-chunk-8-1.png)
+![](Figures/histtwo.png)
 
 Much better. Now we're down to 45 individuals.
 
@@ -217,4 +217,4 @@ Arrows(x0 = population.longs, y0 = population.lats, x1 = c(-116.55, -117.25, -11
     lwd = 2, arr.length = 0.5)
 ```
 
-![](SpaceMix_tutorial_files/figure-markdown_github/unnamed-chunk-21-1.png)
+![](Figures/final_spacemix_plot.png)
