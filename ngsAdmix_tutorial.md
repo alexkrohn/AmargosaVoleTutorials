@@ -50,10 +50,10 @@ write.table(logs[, c(2, 1)], "logfile_formatted", row.names = F,
     col.names = F, quote = F)
 ```
 
-**Remember** that bash will store files that start with 10 before files that start with 1. So, if you have 11 K's you'll have to do:
+**Remember** that bash will store files that start with 10 before files that start with 1. So, if you have 12 K's you'll have to do:
 
 ``` r
-logs$K <- c(rep("11", 10), rep("10", 10), rep("1", 10), rep("2", 
+logs$K <- c(rep("10", 10), rep("11", 10), rep("12", 10), rep("1", 10), rep("2", 
     10), rep("3", 10), rep("4", 10), rep("5", 10), rep("6", 10), 
     rep("7", 10), rep("8", 10), rep("9", 10))
 ```
