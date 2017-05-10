@@ -75,7 +75,7 @@ new.gen.matrix <- gen.matrix.switcharoo[which(rowSums(samples)/(2 * ncol(samples
 hist(rowSums(newsamples)/(2 * ncol(newsamples)))
 ```
 
-![](Figures/histtwo.png)
+![](Figures/histtwo_spacemix.png)
 
 Much better. Now we're down to 45 individuals.
 
