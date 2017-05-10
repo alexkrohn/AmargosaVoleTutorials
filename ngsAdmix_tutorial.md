@@ -107,4 +107,4 @@ text(c(4, 9.5, 13, 18, 24, 27.7, 30.2), -0.05, c("1", "10", "21",
     "55", "39", "9", "11"), xpd = T, cex = 1.2)
 ```
 
-![](Figures/unnamed-chunk-9-1.png)
+![](Figures/admix_tutorial_blackandwhite.png)
