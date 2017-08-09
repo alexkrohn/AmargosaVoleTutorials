@@ -1,4 +1,4 @@
-Running and Plotting Estimated Effective Migration Surfaces (EEMS
+Running and Plotting Estimated Effective Migration Surfaces (EEMS)
 ================
 
 Setup
