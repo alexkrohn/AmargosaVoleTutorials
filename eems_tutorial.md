@@ -6,6 +6,8 @@ Setup
 
 Install EEMS on your computer following [the instructions](https://github.com/dipetkov/eems). You'll also need to install the R package **rEEMSplots** from source. Using the manual, you'll have to run the MCMC a few times to ensure good mixing. The parameters in the included input file worked well enough for my dataset. For this to work, you'll need a paramter file (params.ini) with your parameters, but no --nDemes flag. You'll also need a datapath.coord, datapath.diffs and a datapath.outer file as described in the manual, located in a folder called input.
 
+Example input and output files are in the **eems_tutorial_files** folder.
+
 Run EEMS for Each Deme Three Times Each (3 Runs)
 ------------------------------------------------
 
