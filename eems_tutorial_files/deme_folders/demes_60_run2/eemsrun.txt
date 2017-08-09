@@ -1,0 +1,41 @@
+Input parameter values:
+               datapath = /global/home/kebi/data/Alex/voleseq/round2/demultiplexed_flipped_noclones2/alignmentout/EEMS/eems_run4_corrected_GPS_locations_final_29june2017/input/datapath
+               mcmcpath = /global/home/kebi/data/Alex/voleseq/round2/demultiplexed_flipped_noclones2/alignmentout/EEMS/eems_run4_corrected_GPS_locations_final_29june2017/demes_60_run2
+               prevpath = 
+               gridpath = 
+               distance = euclidean
+                diploid = 1
+                 nIndiv = 31
+                 nSites = 10167
+                 nDemes = 60
+                   seed = 1501355907
+            numMCMCIter = 2000000
+            numBurnIter = 1000000
+            numThinIter = 9999
+              negBiSize = 10
+              negBiProb = 0.670000
+             qVoronoiPr = 0.250000
+             mrateShape = 0.000500
+             qrateShape = 0.002000
+             sigmaShape = 0.001000
+             qrateScale = 0.500000
+             mrateScale = 2.000000
+             sigmaScale = 1.000000
+       mSeedsProposalS2 = 0.004000
+       qSeedsProposalS2 = 0.009000
+       mEffctProposalS2 = 5.000000
+       qEffctProposalS2 = 0.050000
+      mrateMuProposalS2 = 0.100000
+
+Acceptance proportions:
+	(33591/124689) = 27% for proposal type "qTileRate",		 with proposal variance "qEffctProposalS2"
+	(38678/125368) = 31% for proposal type "qTileMove",		 with proposal variance "qSeedsProposalS2"
+	(97825/125146) = 78% for proposal type "qBirthDeath"
+	(116268/375213) = 31% for proposal type "mTileRate",		 with proposal variance "mEffctProposalS2"
+	(50251/249906) = 20% for proposal type "mMeanRate",		 with proposal variance "mrateMuProposalS2"
+	(112790/374591) = 30% for proposal type "mTileMove",		 with proposal variance "mSeedsProposalS2"
+	(202304/374730) = 54% for proposal type "mBirthDeath"
+	(142405/250357) = 57% for proposal type "degrees of freedom"
+
+Final log prior: 89.45
+Final log llike: 954.10
